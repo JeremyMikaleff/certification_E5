@@ -1,0 +1,97 @@
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <title>Affichage de la base de données</title>
+  </head>
+
+  <body>
+    <h1>Base de données postgres</h1>
+    {% autoescape off %}
+    {{ plt_div }}
+    {% endautoescape %}
+    <a href="{% url 'index' %}">Retour</a>
+  </body>
+
+</html>-->
+
+<html data-bs-theme="light" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Capgreen</title>
+    <style>.nav-item:hover {background-color: #0170Ad50!important;}</style>
+    <link href="https://ressourceapp.blob.core.windows.net/stylesheet/table_style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body style="background: linear-gradient(130deg, rgb(43,10,61) 0%, rgb(1, 112, 173));width: 100vw;height: 100vh;font-family: Ubuntu, sans-serif;">
+    <div class="text-break bg-body shadow d-inline-flex flex-column flex-shrink-0 position-fixed top-0 bottom-0" style="height: 100vh;width: 7vw;font-size: 14px;"><a class="text-center link-body-emphasis d-block p-3 text-decoration-none border-bottom" href="/" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/Spade.jpg" width="73" height="67" /><img src="https://ressourceapp.blob.core.windows.net/imagesapp/Capgemini.png" width="100%" /><span class="visually-hidden">Icon-only</span></a>
+        <ul class="nav nav-pills flex-column text-center nav-flush mb-auto">
+            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="/" aria-current="page"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/accueil_300x300.png" width="40%" />
+                    <p style="font-family: Ubuntu, sans-serif;color: #0170Ad;">Accueil</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link active py-3 border-bottom rounded-0" href="calcul_des_emissions" style="width: 7vw;background: transparent;"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/predict_300x300.png" width="40%" />
+                    <p style="font-family: Ubuntu, sans-serif;color: #0170ad;">Calculatrice</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="landing_page_calcul"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/download_300x300.png" width="40%" />
+                    <p style="font-family: Ubuntu, sans-serif;color: #0170AD;">Calculer plusieurs bâtiments</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="ajout_de_batiment"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/form_300x300.png" width="40%" />
+                    <p style="font-family: Ubuntu, sans-serif;color: #0170ad;">Ajout bâtiment</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="bdd_seattle" style="background: #0170ad;"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/bdd_secure_blanc_300x300.png" width="40%" />
+                    <p style="font-family: Ubuntu, sans-serif;color: var(--bs-body-bg);">Voir la BDD</p>
+                </a></li>
+        </ul>
+        <div class="dropdown p-3 border-top"><a class="dropdown-toggle link-body-emphasis d-flex align-items-center text-decoration-none" aria-expanded="false" data-bs-toggle="dropdown" role="button"><img class="rounded-circle" alt width="32" height="32" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" style="object-fit: cover;" /></a>
+            <div class="dropdown-menu shadow text-small" data-popper-placement="top-start"><a class="dropdown-item" href="#">New project...</a><a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Profile</a>
+                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Sign out</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin: 0px;width: 100vw;padding: 0;height: 50vh;">
+        <div class="row" style="margin: 0px;width: 100vw;padding-right: 7vw;padding-left: 7vw;height: 25vh;">
+            <div class="col-md-4" style="background: url('https://ressourceapp.blob.core.windows.net/imagesapp/Shape_Vibrant-Blue_1.png') top / contain no-repeat;">
+                <h1 style="color: rgb(255,255,255);font-family: Ubuntu, sans-serif;border-left-width: 10px;border-left-style: solid;padding-left: 15px;margin-top: 17%;padding-top: 10px;padding-bottom: 10px;">DATASET DE SEATTLE</h1>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style="text-align: right;padding: 0px;" data-bs-smooth-scroll="true"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/access_bdd_1.png" loading="auto" /></div>
+        </div>
+        <div class="row" style="margin: 0px; width: 100vw; padding-left: 7vw; height: 67vh;">
+            <div class="col align-self-center" style="padding: 0 5%;">
+                <div class="card" style="box-shadow: 5px 5px 15px 0px var(--bs-secondary-color); max-height: 100%; overflow: auto;">
+                    <div class="card-body" style="padding-right: 30px; padding-left: 30px;">
+                        <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">BDD Seattle</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">BDD des bâtiments ajoutés </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                                <!-- Contenu du premier onglet -->
+                                {{ bdd_seattle|safe }}
+                            </div>
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                <!-- Contenu du deuxième onglet -->
+                                {{ bdd_ajout_bat|safe }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-xxl-flex align-items-xxl-end"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/Capgreen_spade.png" width="30%" loading="auto" /></div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</footer>
+
+</html>
+
+

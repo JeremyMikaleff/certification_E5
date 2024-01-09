@@ -1,0 +1,136 @@
+<html data-bs-theme="light" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Capgreen</title>
+    <link href="https://ressourceapp.blob.core.windows.net/stylesheet/style_calcul_des_emissions.css" rel="stylesheet">
+    <link href="https://ressourceapp.blob.core.windows.net/stylesheet/table_style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body style="background: url('https://ressourceapp.blob.core.windows.net/imagesapp/Shape_Vibrant-Blue_2.png') left / contain no-repeat, linear-gradient(130deg, rgb(43,10,61) 0%, rgb(1, 112, 173));width: 100vw;height: 100vh;font-family: Ubuntu, sans-serif;">
+    <div class="text-break bg-body shadow d-inline-flex flex-column flex-shrink-0 position-fixed top-0 bottom-0" style="height: 100vh;width: 7vw;font-size: 14px;"><a class="text-center link-body-emphasis d-block p-3 text-decoration-none border-bottom" href="/" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/Spade.jpg" width="73" height="67" /><img src="https://ressourceapp.blob.core.windows.net/imagesapp/Capgemini.png" width="100%" /><span class="visually-hidden">Icon-only</span></a>
+        <ul class="nav nav-pills flex-column text-center nav-flush mb-auto">
+            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="/" aria-current="page"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/accueil_300x300.png" width="40%" />
+                    <p style="font-family: Ubuntu, sans-serif;color: #0170Ad;">Accueil</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="calcul_des_emissions" style="width: 7vw;"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/predict_300x300.png" width="40%" />
+                    <p style="font-family: Ubuntu, sans-serif;color: #0070ad;">Calculatrice</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link active py-3 border-bottom rounded-0" href="landing_page_calcul" style="background: #0170ad;"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/download_blanc_300x300.png" width="40%" />
+                    <p style="font-family: Ubuntu, sans-serif;color: #ffffff;">Calculer plusieurs bâtiments</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="ajout_de_batiment"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/form_300x300.png" width="40%" />
+                    <p style="font-family: Ubuntu, sans-serif;color: #0170AD;">Ajout bâtiment</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="bdd_seattle"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/bdd_secure_300x300.png" width="40%" />
+                    <p style="font-family: Ubuntu, sans-serif;color: #0170AD;">Voir la BDD</p>
+                </a></li>
+        </ul>
+        <div class="dropdown p-3 border-top"><a class="dropdown-toggle link-body-emphasis d-flex align-items-center text-decoration-none" aria-expanded="false" data-bs-toggle="dropdown" role="button"><img class="rounded-circle" alt width="32" height="32" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" style="object-fit: cover;" /></a>
+            <div class="dropdown-menu shadow text-small" data-popper-placement="top-start"><a class="dropdown-item" href="#">New project...</a><a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Profile</a>
+                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Sign out</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin: 0px;width: 100vw;padding: 0;height: 50vh;">
+        <div class="row d-xxl-flex" style="margin: 0px;width: 100vw;padding-right: 0;padding-left: 7vw;height: 33.33vh;">
+            <div class="col-md-4">
+                <h1 style="color: rgb(255,255,255);font-family: Ubuntu, sans-serif;border-left-width: 10px;border-left-style: solid;padding-left: 15px;margin-top: 17%;font-size: 50px;">CALCULER LES EMISSIONS DE CO2 DE VOS BATIMENTS</h1>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style="padding: 0;"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/fond_calculatrice.jpg" width="100%" style="height: 100vh;padding-left: 0%;margin-left: -30%;border-right: 1px solid #ffffff;border-left: 1px solid #ffffff;" /></div>
+        </div>
+        <div class="row" style="margin: 0px;width: 100vw;padding-left: 7vw;height: 33.33vh;">
+            <div class="col-md-4" style="padding-right: 7%;padding-left: 7%;padding-top: 4%;"><a class="btn btn-primary flex-grow-1" role="button" style="width: 100%;margin-top: 5%;margin-bottom: 5%;border-bottom-right-radius: 0;border-bottom-left-radius: 0;" href="upload_file">Upload un dataset ( .csv )</a><a class="btn btn-primary" role="button" style="width: 100%;margin-top: 5%;margin-bottom: 5%;border-radius: 0;" href="upload_modele">Upload un modèle</a><a class="btn btn-outline-primary" role="button" style="width: 100%;margin-top: 5%;margin-bottom: 5%;border-top-left-radius: 0;border-top-right-radius: 0;" href="calcul_fichier_ext">Faire une prédiction</a></div>
+            <div class="col align-self-center" style="padding: 0;font-family: Ubuntu, sans-serif;">
+                <div class="card" style="box-shadow: 5px 5px 15px 0px var(--bs-secondary-color);">
+                    <div class="card-body" style="padding-right: 30px;padding-left: 30px;text-align: right;">
+                        <h2 class="text-muted card-subtitle mb-2" style="font-family: Ubuntu, sans-serif;text-align: right;font-weight: bold;">Faire la prédiction</h2>
+                        <p class="text-start">Choisir un dataset et un modèle puis lancez le calcul.</p>
+                        <p class="text-start" style="margin-top: 23px;border-top: 1px solid rgb(222,226,230);">Dataset</p>
+                        <form class="text-end" method="post" enctype="multipart/form-data" id="myForm">
+                            {% csrf_token %}
+                            <select class="form-select" style="width: 100%;" name="dataset">
+                                {% for blob_files in blob_list_files %}
+                                <option>{{ blob_files.name }}</option>
+                                {% endfor %}
+                            </select>
+                            <p class="text-start" style="margin-top: 23px;border-top: 1px solid rgb(222,226,230);">Modèle</p>
+                            <select class="form-select" style="width: 100%;" name="model">
+                                {% for blob_models in blob_list_models %}
+                                <option>{{ blob_models.name }}</option>
+                                {% endfor %}
+                            </select>
+                            {% if resultat %}
+                            <input class="btn btn-primary" id="monBouton" type="button" style="background: #0170ad;margin-top: 10px;" value="Afficher le résultat" />
+                            {% endif %}
+                            <input class="btn btn-primary" type="submit" style="background: #0170ad;margin-top: 10px;" value="Prédire" onclick="showModal()" />
+                        </form>
+
+                        <div id="maFenetreModale" class="modal fade show" role="dialog" style="font-family: Ubuntu, sans-serif;">
+                            <div class="modal-dialog-centered" role="document">
+                                <div class="modal-content" style="margin-right:10%;margin-left:10%;margin-top: 3%;">
+                                    <div class="modal-header">
+                                        <h2 style="font-family: Ubuntu, sans-serif;"><strong>RÉSULTAT</strong></h2>
+                                    </div>
+                                    <div class="modal-body" style="align-self: center;">
+                                        {{ resultat|safe }}
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a class="btn btn-light" type="button" href="https://ressourceapp.blob.core.windows.net/fichier/resultat_prediction.csv">Télécharger le résultat</a>
+                                        <button class="btn btn-primary close" type="button" id="close">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row" style="margin: 0px;width: 100vw;padding-left: 7vw;height: 33.33vh;">
+            <div class="col-md-4 d-xxl-flex align-items-xxl-end"><img class="img-fluid" src="https://ressourceapp.blob.core.windows.net/imagesapp/Capgreen_spade.png" width="30%" loading="auto" /></div>
+            <div class="col-md-4">
+                <!-- Fenêtre modale pour le loading calcul -->
+                <div id="actionModal" class="modal fade show" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content" style="text-align: center; background-color: transparent; border: none;">
+                            <div class="modal-body">
+                                <p style="color: #ffffff; font-size: 45; font-family: Ubuntu, sans-serif!important;">CALCUL EN COURS</p>
+                                <img src="https://ressourceapp.blob.core.windows.net/imagesapp/loading_symbo_blue.webp" width="15%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 align-self-center" style="background: rgba(0,0,0,0.6);padding-top: 1%;padding-bottom: 1%;">
+                <h4 class="text-end" style="font-size: 40px;color: rgb(255,255,255);font-family: Ubuntu, sans-serif;border-right-width: 10px;border-right-style: solid;margin-bottom: 0px;margin-right: 17%;padding-right: 15px;">GET THE</h4>
+                <h4 class="text-end" style="font-size: 40px;color: rgb(255,255,255);font-family: Ubuntu, sans-serif;border-right-width: 10px;border-right-style: solid;margin-bottom: 0px;margin-right: 17%;padding-right: 15px;">FUTURE YOU WANT</h4>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Récupérer le bouton et la fenêtre modale
+        var bouton = document.getElementById("monBouton");
+        var fenetreModale = document.getElementById("maFenetreModale");
+
+        // Ajouter un gestionnaire d'événements au bouton pour ouvrir la fenêtre modale
+        bouton.addEventListener("click", function() {
+        fenetreModale.style.display = "block";
+        });
+
+        document.querySelector(".close").addEventListener("click", function () {
+        document.getElementById("maFenetreModale").style.display = "none";
+        });
+    </script>
+    <script src="https://ressourceapp.blob.core.windows.net/stylesheet/modal_loading_calcul.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+
+</footer>
+
+</html>

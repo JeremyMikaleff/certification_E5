@@ -1,0 +1,10 @@
+SQLAlchemy
+pandas
+sodapy
+psycopg2-binary
+pyyaml
+pytest
+scikit-learn==1.2.2
+Django==4.2.2
+plotly
+azure-storage-blob 

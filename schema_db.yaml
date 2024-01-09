@@ -1,0 +1,122 @@
+tables:
+
+  - name: buildings
+    columns:
+
+      - name: osebuildingid
+        type: integer
+        primary_key: true
+
+      - name: buildingtype
+        type: varchar(255)
+
+      - name: primarypropertytype
+        type: varchar(255)
+
+      - name: propertyname
+        type: varchar(255)
+
+      - name: address
+        type: varchar(255)
+
+      - name: zipcode
+        type: varchar(10)
+
+      - name: taxparcelidentificationnumber
+        type: varchar(255)
+
+      - name: councildistrictcode
+        type: integer
+
+      - name: neighborhood
+        type: varchar(255)
+
+      - name: latitude
+        type: float
+
+      - name: longitude
+        type: float
+
+      - name: yearbuilt
+        type: integer
+
+      - name: numberofbuildings
+        type: integer
+
+      - name: numberoffloors
+        type: integer
+
+      - name: propertygfatotal
+        type: float
+
+      - name: propertygfaparking
+        type: float
+
+      - name: propertygfabuilding_s
+        type: float
+
+      - name: listofallpropertyusetypes
+        type: varchar(255)
+
+      - name: largestpropertyusetype
+        type: varchar(255)
+
+      - name: largestpropertyusetypegfa
+        type: float
+
+      - name: energystarscore
+        type: float
+
+      - name: siteeui_kbtu_sf
+        type: float
+
+      - name: siteeuiwn_kbtu_sf
+        type: float
+
+      - name: sourceeui_kbtu_sf
+        type: float
+
+      - name: sourceeuiwn_kbtu_sf
+        type: float
+
+      - name: siteenergyuse_kbtu
+        type: float
+
+      - name: siteenergyusewn_kbtu
+        type: float
+
+      - name: steamuse_kbtu
+        type: float
+
+      - name: electricity_kwh
+        type: float
+
+      - name: electricity_kbtu
+        type: float
+
+      - name: naturalgas_therms
+        type: float
+
+      - name: naturalgas_kbtu
+        type: float
+
+      - name: totalghgemissions
+        type: float
+
+      - name: ghgemissionsintensity
+        type: float
+
+      - name: secondlargestpropertyusetype
+        type: varchar(255)
+
+      - name: secondlargestpropertyusetypegfa
+        type: varchar(255)
+
+      - name: thirdlargestpropertyusetype
+        type: varchar(255)
+
+      - name: thirdlargestpropertyusetypegfa
+        type: float
+
+      - name: yearsenergystarcertified
+        type: varchar(100)
