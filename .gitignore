@@ -164,3 +164,7 @@ test.ipynb
 config.yaml
 .vscode
 2016_Building_Energy_Benchmarking.csv
+
+.history
+.scannerwork
+.sonar_lock

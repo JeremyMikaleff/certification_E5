@@ -77,10 +77,10 @@ WSGI_APPLICATION = "seattle_emission_calculator.wsgi.application"
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'AJ_Pelican',
-        'PASSWORD': 'Pelican1234',
-        'HOST': 'pelican.postgres.database.azure.com',
+        'NAME': 'pelican',
+        'USER': 'admin',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
